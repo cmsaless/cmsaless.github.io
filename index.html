@@ -10,43 +10,47 @@
                 margin-left: 0;
                 font-family:'Roboto', serif;
             }
-            /* Formatting the navighation bar (list) */
+            /* Formats the navigation bar */
             ul {
-                /* Removes bullet points */
-                list-style-type: none;
-                position: fixed;
-                /* Removing any spacing, margins, or padding */
-                top: 0;
-                margin: 0;
-                padding: 0;
+                list-style-type: none; /* Removes bullet points */
+                position: fixed; /* Nav bar stays fixed while scrolling */
+                top: 0; /* Removes any default margins */
+                margin: 0; /* Removes any default margins */
+                padding: 0; /* Removes any default padding */
                 width: 100%;
-                overflow: hidden;
+                overflow: hidden; /* Doesn't get covered by other elements */
                 background-color: #333;
             }
             /* This list objects will be on the left */
             li {
                 float: left;
             }
-            /* Any <span> objects in the list with have some padding */
-            li span {
-                padding-left: 400px;
-            }
             /* Settings for any <a> objects in the list */
             li a {
                 display: block;
-                padding: 14px 16px;
+                padding: 15px;
                 color: white;
                 text-align: center;
                 text-decoration: none;
             }
             /* Highlights the currently selected link object */
             li a.active {
-                background-color: #009933;
+                background-color: #3399ff;
                 color: white;
             }
             /* Change the link color when hovered over */
             li a:hover {
                 background-color: #111;
+            }
+            li span {
+                display: block;
+                margin-left: 400px;
+                margin-right: 40px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: white;
+                text-align: center;
+                text-decoration: none;
             }
             /* Defines margins on the side of the page */
             #sidemargins {
@@ -62,20 +66,19 @@
 
 <body >
     <ul>
-        <li><span>Chris Saless</span></li>
+        <li><span><font size="5">Chris Saless</font></span></li>
+        <font size="3">
         <li><a class="active" href="https://cmsaless.github.io/">Home</a></li>
         <li><a href="/projects.html">Projects</a></li>
         <li><a href="/resume.html">Resume</a></li>
         <li><a href="/contact.html">Contact</a></li>
+        </font>
     </ul>
     <div id="navbuffer"></div>
     <div id="sidemargins">
-        <p><font size="24">Eventually this page will have stuff on it</font></p>
-        <hr>
+        <p><font size="24">Hi! My name is Chris.</font></p>
         <p><b><font color="red">***Currently under construction***</font></b></p>
         <img src="monkey.jpg" alt="a monkey" width="291" height="400">
-        <br>
-        <a href="/extrapage.html">Link text here</a>
     </div>
 
 </body>
