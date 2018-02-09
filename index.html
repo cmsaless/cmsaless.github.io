@@ -29,7 +29,7 @@
             }
             /* Any <span> objects in the list with have some padding */
             li span {
-                padding-left: 300px;
+                padding-left: 400px;
             }
             /* Settings for any <a> objects in the list */
             li a {
@@ -48,17 +48,13 @@
             li a:hover {
                 background-color: #111;
             }
-            /* Puts 300 pixel margins on both sides of the page (neater) */
-            div {
-                margin-right: 300px;
-                margin-left: 300px;
+            /* Defines margins on the side of the page */
+            #sidemargins {
+                margin-left: 400px;
+                margin-right: 400px;
             }
-            /* Makes the horizontal lines fill the entire page */
-            hr {
-                margin-left: 300px;
-                margin-right: 300px;
-            }
-            #top {
+            /* Buts space between nav bar and page */
+            #navbuffer {
                 margin-top: 60px;
             }
     </style>
@@ -66,26 +62,22 @@
 
 <body >
     <ul>
-        <li><span></span></li>
+        <li><span>Chris Saless</span></li>
         <li><a class="active" href="https://cmsaless.github.io/">Home</a></li>
         <li><a href="/projects.html">Projects</a></li>
         <li><a href="/resume.html">Resume</a></li>
         <li><a href="/contact.html">Contact</a></li>
     </ul>
-    <div id="top">
-        <!-- <br><br> -->
-        <p>
-            <font size="24">Eventually this page will have stuff on it</font>
-        </p>
-    </div>
-    <hr>
-    <br>
-    <div>
+    <div id="navbuffer"></div>
+    <div id="sidemargins">
+        <p><font size="24">Eventually this page will have stuff on it</font></p>
+        <hr>
         <p><b><font color="red">***Currently under construction***</font></b></p>
         <img src="monkey.jpg" alt="a monkey" width="291" height="400">
         <br>
         <a href="/extrapage.html">Link text here</a>
     </div>
+
 </body>
 
 </html>

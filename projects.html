@@ -29,7 +29,7 @@
             }
             /* Any <span> objects in the list with have some padding */
             li span {
-                padding-left: 300px;
+                margin-left: 100px;
             }
             /* Settings for any <a> objects in the list */
             li a {
@@ -48,14 +48,12 @@
             li a:hover {
                 background-color: #111;
             }
-            /* Puts 300 pixel margins on both sides of the page (neater) */
-            div {
-                margin-right: 300px;
-                margin-left: 300px;
+            #sidemargins {
+                margin-left: 400px;
+                margin-right: 400px;
             }
-            /* Makes the horizontal lines fill the entire page */
-            hr {
-                min-width:100%;
+            #navbuffer {
+                margin-top: 60px;
             }
     </style>
 </head>
@@ -68,8 +66,10 @@
         <li><a href="/resume.html">Resume</a></li>
         <li><a href="/contact.html">Contact</a></li>
     </ul>
-    <br><br>
-    <p>projects</p>
+    <div id="navbuffer"></div>
+    <div id="sidemargins">
+        <p>projects</p>
+    </div>
 </body>
 
 </html>
