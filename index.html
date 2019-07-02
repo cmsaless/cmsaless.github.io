@@ -3,24 +3,56 @@
 
 <head>
     <title>cmsaless</title>
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body background="./public/glass.jpg">
-    
+
     <div class="info">
+
         <h1>Christopher M. Saless</h1>
-        <p>christophersaless@gmail.com</p>
+        <h3>Software Engineer</h3>
+        
         <br>
-        <a href="./public/Saless Resume.pdf">Resume</a>
+        <a href="./public/Saless Resume.pdf" target="_blank">Resume</a>
         <br>
-        <a href="https://www.linkedin.com/in/christopher-saless/">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/christopher-saless/" target="_blank">LinkedIn</a>
         <br>
-        <a href="https://www.github.com/cmsaless">GitHub</a>
+        <a href="https://www.github.com/cmsaless" target="_blank">GitHub</a>
+        <br>
+        <br>
+
+        <span data-toggle="tooltip" title="Copy" id="email">christophersaless@gmail.com</span>
 
     </div>
 
 </body>
+
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+</script>
+
+<script>
+    const span = document.querySelector("#email");
+
+    span.onclick = function() {
+        document.execCommand("copy");
+    }
+
+    span.addEventListener("copy", function(event) {
+        event.preventDefault();
+        if (event.clipboardData) {
+            event.clipboardData.setData("text/plain", span.textContent);
+            console.log(event.clipboardData.getData("text"))
+        }
+    });
+</script>
 
 </html>

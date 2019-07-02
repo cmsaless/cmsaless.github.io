@@ -1,20 +1,14 @@
 body, html {
+    font:"consolas";
     height:100%;
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
 }
 
-/* .bg {
-    background-image: url('../public/glass.jpg');
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover;
-} */
-
 .info {
     color: gray;
-    padding: 50px;
+    padding: 30px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -22,4 +16,12 @@ body, html {
 
 a {
     color: gray
+}
+
+span {
+    cursor: pointer;
+}
+
+span:hover {
+    text-decoration: underline;
 }
