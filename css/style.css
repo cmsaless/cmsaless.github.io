@@ -24,8 +24,9 @@ body, html {
 }
 
 .info_mobile {
-    color:black;
+    color:gray;
     margin: 5px;
+    padding: 5px;
 }
 
 a {
