@@ -1,0 +1,22 @@
+body, html {
+    height:100%;
+}
+
+.bg {
+    background-image: url('../public/glass.jpg');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.info {
+    color: gray;
+    padding: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+a {
+    color: gray
+}
