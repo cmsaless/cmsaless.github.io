@@ -1,13 +1,16 @@
 body, html {
     height:100%;
-}
-
-.bg {
-    background-image: url('../public/glass.jpg');
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
 }
+
+/* .bg {
+    background-image: url('../public/glass.jpg');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+} */
 
 .info {
     color: gray;
