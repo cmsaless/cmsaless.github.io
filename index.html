@@ -13,7 +13,7 @@
 
 <body background="./public/glass.jpg">
 
-    <div class="info">
+    <div class="info" id="main">
 
         <h1>Christopher M. Saless</h1>
         <h3>Software Engineer</h3>
@@ -53,6 +53,13 @@
             console.log(event.clipboardData.getData("text"))
         }
     });
+</script>
+
+<script>
+    if (/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+        var elem = document.getElementById("main");
+        elem.className = "info_mobile"
+    }
 </script>
 
 </html>
