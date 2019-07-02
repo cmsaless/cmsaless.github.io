@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body background="./public/glass.jpg">
+<body class="bg">
 
     <div class="info" id="main">
 
@@ -57,7 +57,10 @@
 
 <script>
     if (/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-        var elem = document.getElementById("main");
+        var elem = document.getElementsByClassName("bg");
+        elem.className = "bg_mobile";
+        
+        elem = document.getElementById("main");
         elem.className = "info_mobile"
     }
 </script>

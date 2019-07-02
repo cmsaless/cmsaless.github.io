@@ -6,6 +6,15 @@ body, html {
     background-size: cover;
 }
 
+.bg {
+    background-image: url("../public/glass.jpg")
+}
+
+.bg_mobile {
+    background-image: url("");
+    background: white
+}
+
 .info {
     color: gray;
     padding: 50px;
@@ -15,15 +24,7 @@ body, html {
 }
 
 .info_mobile {
-    background: rgba(15, 15, 15, 0.9);
-    color: white;
-    margin: 0 auto;
-    padding: 15px;
-    width: 250px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+    color:black;
 }
 
 a {
