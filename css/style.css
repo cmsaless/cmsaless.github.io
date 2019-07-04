@@ -17,7 +17,8 @@ body, html {
 
 .info {
     color: gray;
-    padding: 30px;
+    margin-left: 50px;
+    margin-bottom: 60px;
     position: fixed;
     bottom: 0;
     left: 0;
