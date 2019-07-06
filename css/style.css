@@ -34,6 +34,11 @@ a {
     color: gray
 }
 
+a:hover {
+    color: lightseagreen;
+    text-decoration: none;
+}
+
 span {
     cursor: pointer;
     cursor: hand;
@@ -41,5 +46,6 @@ span {
 }
 
 span:hover {
+
     text-decoration: underline;
 }
