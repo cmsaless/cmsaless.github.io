@@ -6,28 +6,18 @@ body, html {
     background-size: cover;
 }
 
+.card {
+    margin: auto;
+    opacity: 100%;
+}
+
+.row {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .bg {
     background-image: url("../public/toronto.jpg")
-}
-
-.bg_mobile {
-    background-image: url("");
-    background: white
-}
-
-.info {
-    color: gray;
-    margin-left: 40px;
-    margin-bottom: 35px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
-
-.info_mobile {
-    color:gray;
-    margin: 5px;
-    padding: 5px;
 }
 
 a {
@@ -35,17 +25,6 @@ a {
 }
 
 a:hover {
-    color: lightseagreen;
+    color: cyan;
     text-decoration: none;
-}
-
-span {
-    cursor: pointer;
-    cursor: hand;
-    z-index: -1;
-}
-
-span:hover {
-
-    text-decoration: underline;
 }
